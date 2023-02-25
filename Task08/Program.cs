@@ -15,3 +15,7 @@ while (count <= number){
     }
     count = count + 2; //или 1
 }
+// while (count <= number){
+
+//     Console.Write(count + " ");
+//     count = count + 2; -------------это для двойки без проверки чётности 
