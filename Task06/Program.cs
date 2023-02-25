@@ -9,4 +9,5 @@ int lastDigit = number % 2;
 if (lastDigit == 0){
     Console.WriteLine($"чило {number} является чётным ");
 }
-else Console.WriteLine("нет ответа: запустите программу заново и введите другое целое число");
+else Console.WriteLine($"число {number} является нечетным"); //стало
+// else Console.WriteLine("нет ответа: запустите программу заново и введите другое целое число"); БЫЛО
