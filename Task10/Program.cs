@@ -1,24 +1,19 @@
-﻿
-// int number = new Random().Next(100, 1000);
-// Console.WriteLine($"Случайное число из отрезка 100 - 1000 -> {number}");
-// int firstDigit = number / 100;
-// int lastDigit = number % 10;
-// int result =  firstDigit*10 + lastDigit;
-// Console.WriteLine($"{result}");
+﻿// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 
+// 456 -> 5
+// 782 -> 8
+// 918 -> 1
+Console.WriteLine("Введите трехзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+// if ( number>99 || number<1000) {
 
-
-int number = new Random().Next(100, 1000);
-Console.WriteLine($"Случайное трехзначное число -> {number}");
-
-
-int removeSecondDigit = RemoveSecondDigit(number);
-Console.WriteLine($"Результат = {removeSecondDigit}");
-
-int RemoveSecondDigit (int num) 
+// int secondDigit = number / 10 % 10 ;
+// Console.WriteLine(secondDigit);
+// }
+int secondDigit = SecondDigit(number);
+int SecondDigit (int num)
 {
-    int firstDigit = num / 100;
-    int lastDigit = num % 10;
-    int result = firstDigit * 10 + lastDigit;
-    return result;
+    int result = num / 10 % 10 ;
+return result;
 }
+Console.WriteLine(secondDigit);
